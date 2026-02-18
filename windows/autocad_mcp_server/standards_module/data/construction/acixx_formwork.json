@@ -1,0 +1,23 @@
+{
+    "_notice": "PLACEHOLDER DATA - Replace with your formwork design code values",
+    "_standard": "ACIXX Formwork Design (placeholder for ACI 347-04)",
+    "design_loads": {
+        "dead_load_psf": 150,
+        "live_load_psf": 50,
+        "minimum_design_load_psf": 100,
+        "motorized_cart_additional_psf": 25
+    },
+    "lateral_pressure": {
+        "_note": "Replace with actual lateral pressure formula from your code",
+        "formula_type": "placeholder",
+        "max_pressure_psf": 2000,
+        "unit_weight_pcf": 150
+    },
+    "shore_removal_days": {
+        "_note": "Minimum days before shore removal - replace with your code values",
+        "slab": 7,
+        "beam_soffit": 14,
+        "column": 1,
+        "wall": 1
+    }
+}

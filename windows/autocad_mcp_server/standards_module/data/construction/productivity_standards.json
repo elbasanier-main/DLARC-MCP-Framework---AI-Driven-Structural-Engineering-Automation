@@ -1,0 +1,320 @@
+{
+  "standard_name": "Construction_Productivity_Expert_Experience",
+  "version": "1.0",
+  "date_created": "2025-11-19",
+  "source": "Expert field experience compilation",
+  "units": {
+    "volume": "mÂ³",
+    "area": "mÂ²",
+    "length": "m",
+    "mass": "kg",
+    "time_unit": "per day",
+    "rate_unit": "per hour"
+  },
+  "productivity_data": {
+    "excavation_earthwork": {
+      "category": "Excavation & Earthwork",
+      "tasks": {
+        "manual_excavation": {
+          "description": "Manual Excavation",
+          "productivity": {
+            "min": 1.5,
+            "max": 2.0,
+            "unit": "mÂ³/labour-day",
+            "crew_size": 1
+          }
+        },
+        "jcb_excavation": {
+          "description": "Excavation by JCB",
+          "productivity": {
+            "min": 60,
+            "max": 80,
+            "unit": "mÂ³/hour",
+            "equipment": "JCB"
+          }
+        },
+        "poclain_excavation": {
+          "description": "Excavation by Poclain (200)",
+          "productivity": {
+            "min": 100,
+            "max": 150,
+            "unit": "mÂ³/hour",
+            "equipment": "Poclain 200"
+          }
+        },
+        "roller_compaction": {
+          "description": "Roller Compaction",
+          "productivity": {
+            "min": 200,
+            "max": 250,
+            "unit": "mÂ³/day",
+            "equipment": "Roller"
+          }
+        }
+      }
+    },
+    "concrete_works": {
+      "category": "Concrete Works",
+      "tasks": {
+        "manual_mixing": {
+          "description": "Manual Concrete Mixing",
+          "productivity": {
+            "min": 1.5,
+            "max": 2.0,
+            "unit": "mÂ³/labour-day",
+            "crew_size": 1
+          }
+        },
+        "manual_laying": {
+          "description": "Manual Concrete Laying",
+          "productivity": {
+            "min": 3,
+            "max": 4,
+            "unit": "mÂ³/labour-day",
+            "crew_size": 1
+          }
+        },
+        "pump_placement": {
+          "description": "Concrete Placement by Pump",
+          "productivity": {
+            "min": 20,
+            "max": 30,
+            "unit": "mÂ³/hour",
+            "equipment": "Concrete pump"
+          }
+        },
+        "curing_ponding": {
+          "description": "Curing (Ponding method)",
+          "productivity": {
+            "coverage": 100,
+            "unit": "mÂ²/labour",
+            "crew_size": 1
+          }
+        },
+        "shuttering": {
+          "description": "Formwork/Shuttering",
+          "productivity": {
+            "min": 1.2,
+            "max": 1.5,
+            "unit": "mÂ²/labour-day",
+            "crew_size": 1
+          }
+        }
+      }
+    },
+    "reinforcement_work": {
+      "category": "Reinforcement Work",
+      "tasks": {
+        "cutting_bending_tying": {
+          "description": "Rebar Cutting, Bending, Tying",
+          "productivity": {
+            "min": 100,
+            "max": 150,
+            "unit": "kg/labour-day",
+            "crew_size": 1
+          }
+        },
+        "fixing_columns_beams": {
+          "description": "Rebar Fixing for Columns/Beams",
+          "productivity": {
+            "min": 80,
+            "max": 120,
+            "unit": "kg/labour-day",
+            "crew_size": 1
+          }
+        },
+        "fixing_slabs_footings": {
+          "description": "Rebar Fixing for Slabs/Footings",
+          "productivity": {
+            "min": 100,
+            "max": 150,
+            "unit": "kg/labour-day",
+            "crew_size": 1,
+            "average": 125
+          }
+        }
+      }
+    },
+    "masonry": {
+      "category": "Masonry",
+      "tasks": {
+        "brick_manual": {
+          "description": "Brick Masonry (Manual mixing)",
+          "productivity": {
+            "min": 0.2,
+            "max": 0.25,
+            "unit": "mÂ³/labour-day",
+            "crew_size": 1
+          }
+        },
+        "brick_machine": {
+          "description": "Brick Masonry (Machine mixing)",
+          "productivity": {
+            "min": 0.3,
+            "max": 0.4,
+            "unit": "mÂ³/labour-day",
+            "crew_size": 1
+          }
+        },
+        "aac_block": {
+          "description": "AAC Block Masonry",
+          "productivity": {
+            "min": 0.5,
+            "max": 0.7,
+            "unit": "mÂ³/labour-day",
+            "crew_size": 1
+          }
+        }
+      }
+    },
+    "plastering_finishing": {
+      "category": "Plastering & Finishing",
+      "tasks": {
+        "plaster_12mm": {
+          "description": "12mm Plaster",
+          "productivity": {
+            "min": 8,
+            "max": 10,
+            "unit": "mÂ²/labour-day",
+            "crew_size": 1,
+            "thickness_mm": 12
+          }
+        },
+        "plaster_20mm": {
+          "description": "20mm Plaster",
+          "productivity": {
+            "min": 6,
+            "max": 8,
+            "unit": "mÂ²/labour-day",
+            "crew_size": 1,
+            "thickness_mm": 20
+          }
+        },
+        "putty": {
+          "description": "Wall Putty Application",
+          "productivity": {
+            "min": 12,
+            "max": 15,
+            "unit": "mÂ²/labour-day",
+            "crew_size": 1
+          }
+        },
+        "painting_single_coat": {
+          "description": "Painting (1 coat)",
+          "productivity": {
+            "min": 15,
+            "max": 20,
+            "unit": "mÂ²/labour-day",
+            "crew_size": 1
+          }
+        },
+        "tiling": {
+          "description": "Floor/Wall Tiling",
+          "productivity": {
+            "min": 3,
+            "max": 4,
+            "unit": "mÂ²/labour-day",
+            "crew_size": 1
+          }
+        }
+      }
+    },
+    "road_paving": {
+      "category": "Road & Paving",
+      "tasks": {
+        "pcc_manual": {
+          "description": "PCC (Manual Mixing)",
+          "productivity": {
+            "min": 1.5,
+            "max": 2.0,
+            "unit": "mÂ³/labour-day",
+            "crew_size": 1
+          }
+        },
+        "asphalt_laying": {
+          "description": "Asphalt Laying",
+          "productivity": {
+            "min": 25,
+            "max": 30,
+            "unit": "mÂ²/labour-day",
+            "crew_size": 1
+          }
+        },
+        "kerb_stone": {
+          "description": "Kerb Stone Installation",
+          "productivity": {
+            "min": 30,
+            "max": 40,
+            "unit": "m/labour-day",
+            "crew_size": 1
+          }
+        },
+        "paver_block": {
+          "description": "Paver Block Installation",
+          "productivity": {
+            "min": 5,
+            "max": 7,
+            "unit": "mÂ²/labour-day",
+            "crew_size": 1
+          }
+        }
+      }
+    }
+  },
+  "calculation_examples": {
+    "slab_construction": {
+      "description": "200 mÂ² slab with 150mm thickness example",
+      "assumptions": {
+        "slab_area_m2": 200,
+        "thickness_mm": 150,
+        "thickness_m": 0.15,
+        "rebar_density_kg_m3": 100,
+        "crew_size": 6
+      },
+      "calculations": {
+        "rebar_fixing": {
+          "total_volume_m3": 30,
+          "total_rebar_kg": 3000,
+          "productivity_kg_per_labour_day": 125,
+          "total_labour_days": 24,
+          "duration_with_crew": "4-5 days",
+          "crew_size": 6
+        },
+        "concrete_manual_placing": {
+          "volume_m3": 30,
+          "productivity_m3_per_labour_day": 3.5,
+          "total_labour_days": 8.57,
+          "duration_with_crew": "1.5-2 days",
+          "crew_size": 6
+        },
+        "concrete_pump_placing": {
+          "volume_m3": 30,
+          "productivity_m3_per_hour": 25,
+          "pure_placing_hours": 1.2,
+          "practical_duration": "1 day (including setup, finishing, cleaning)"
+        }
+      }
+    }
+  },
+  "notes": {
+    "regional_context": "Based on field experience, primarily applicable to developing construction markets",
+    "us_practice": "In the United States, engineers typically use RSMeans Construction Data instead of fixed labour norms. RSMeans provides labour productivity, crew composition, equipment rates, and task durations based on real market statistics.",
+    "rsmeans_note": "RSMeans is a proprietary, subscription-based resource and cannot be publicly reproduced without licensing",
+    "variability_factors": [
+      "Worker skill level",
+      "Site conditions",
+      "Weather",
+      "Material availability",
+      "Equipment condition",
+      "Project management efficiency",
+      "Regional labour practices"
+    ],
+    "usage_recommendation": "These values represent typical field conditions. Always verify against local conditions and historical project data."
+  },
+  "metadata": {
+    "compatibility": "MCP AutoCAD Server Standards Module",
+    "integration_purpose": "Construction scheduling, productivity analysis, labour estimation",
+    "data_quality": "Expert field experience",
+    "validation_status": "Peer-reviewed by construction professionals"
+  }
+}
