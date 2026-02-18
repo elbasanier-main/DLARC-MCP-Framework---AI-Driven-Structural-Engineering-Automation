@@ -1,0 +1,33 @@
+{
+    "_notice": "Construction sequence templates - customizable per project",
+    "concrete_frame": {
+        "sequence_id": "CF_001",
+        "activities": [
+            {"wbs": "01", "name": "Site_Preparation", "dependencies": []},
+            {"wbs": "02", "name": "Foundation", "dependencies": ["Site_Preparation"]},
+            {"wbs": "03", "name": "Columns_Floor_N", "dependencies": ["Foundation"], "repeatable": true},
+            {"wbs": "04", "name": "Beams_Floor_N", "dependencies": ["Columns_Floor_N"], "repeatable": true},
+            {"wbs": "05", "name": "Slab_Floor_N", "dependencies": ["Beams_Floor_N"], "repeatable": true},
+            {"wbs": "06", "name": "Walls_Floor_N", "dependencies": ["Slab_Floor_N"], "repeatable": true}
+        ]
+    },
+    "shear_wall": {
+        "sequence_id": "SW_001",
+        "activities": [
+            {"wbs": "01", "name": "Site_Preparation", "dependencies": []},
+            {"wbs": "02", "name": "Foundation", "dependencies": ["Site_Preparation"]},
+            {"wbs": "03", "name": "ShearWalls_Floor_N", "dependencies": ["Foundation"], "repeatable": true},
+            {"wbs": "04", "name": "Slab_Floor_N", "dependencies": ["ShearWalls_Floor_N"], "repeatable": true}
+        ]
+    },
+    "steel_frame": {
+        "sequence_id": "SF_001",
+        "activities": [
+            {"wbs": "01", "name": "Site_Preparation", "dependencies": []},
+            {"wbs": "02", "name": "Foundation", "dependencies": ["Site_Preparation"]},
+            {"wbs": "03", "name": "Steel_Erection_Floor_N", "dependencies": ["Foundation"], "repeatable": true},
+            {"wbs": "04", "name": "Metal_Deck_Floor_N", "dependencies": ["Steel_Erection_Floor_N"], "repeatable": true},
+            {"wbs": "05", "name": "Concrete_Topping_Floor_N", "dependencies": ["Metal_Deck_Floor_N"], "repeatable": true}
+        ]
+    }
+}

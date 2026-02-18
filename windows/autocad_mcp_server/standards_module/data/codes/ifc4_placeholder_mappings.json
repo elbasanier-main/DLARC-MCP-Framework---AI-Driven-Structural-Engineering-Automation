@@ -1,0 +1,16 @@
+{
+    "_notice": "IFC4 layer-to-class mappings - customizable",
+    "layer_mappings": {
+        "S-COLS": {"ifc_class": "IfcColumn", "predefined_type": "COLUMN"},
+        "S-BEAM": {"ifc_class": "IfcBeam", "predefined_type": "BEAM"},
+        "S-SLAB": {"ifc_class": "IfcSlab", "predefined_type": "FLOOR"},
+        "S-WALL": {"ifc_class": "IfcWall", "predefined_type": "SHEAR"},
+        "S-FNDN": {"ifc_class": "IfcFooting", "predefined_type": "STRIP_FOOTING"},
+        "A-WALL": {"ifc_class": "IfcWall", "predefined_type": "STANDARD"},
+        "A-DOOR": {"ifc_class": "IfcDoor", "predefined_type": "DOOR"},
+        "A-WIND": {"ifc_class": "IfcWindow", "predefined_type": "WINDOW"},
+        "M-HVAC": {"ifc_class": "IfcDuctSegment", "predefined_type": "RIGIDSEGMENT"},
+        "P-PIPE": {"ifc_class": "IfcPipeSegment", "predefined_type": "RIGIDSEGMENT"},
+        "E-WIRE": {"ifc_class": "IfcCableSegment", "predefined_type": "CABLESEGMENT"}
+    }
+}
