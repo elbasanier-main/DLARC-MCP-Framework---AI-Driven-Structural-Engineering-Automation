@@ -1,0 +1,18 @@
+{
+    "mcpServers": {
+        "autocad-2024": {
+            "command": "python",
+            "args": ["C:\\MCP\\autocad_mcp_server\\autocad_2024_mcp_server.py"],
+            "env": {
+                "PYTHONPATH": "C:\\MCP\\autocad_mcp_server"
+            }
+        },
+        "structural-design": {
+            "command": "python",
+            "args": ["C:\\MCP\\etabs_mcp_server\\enhanced_etabs_server.py"],
+            "env": {
+                "PYTHONPATH": "C:\\MCP\\etabs_mcp_server"
+            }
+        }
+    }
+}
