@@ -1,0 +1,25 @@
+{
+    "_notice": "PLACEHOLDER DATA - Replace with your concrete design code values",
+    "_standard": "ACIXX2 Concrete Design (placeholder for ACI 318-19)",
+    "concrete_grades": {
+        "C20": {"fc_mpa": 20, "fc_psi": 2900, "Ec_mpa": 21500},
+        "C25": {"fc_mpa": 25, "fc_psi": 3625, "Ec_mpa": 23500},
+        "C30": {"fc_mpa": 30, "fc_psi": 4350, "Ec_mpa": 25700},
+        "C35": {"fc_mpa": 35, "fc_psi": 5075, "Ec_mpa": 27800},
+        "C40": {"fc_mpa": 40, "fc_psi": 5800, "Ec_mpa": 29700}
+    },
+    "phi_factors": {
+        "_note": "Replace with actual strength reduction factors from your code",
+        "moment": 0.90,
+        "shear": 0.75,
+        "torsion": 0.75,
+        "compression_tied": 0.65,
+        "compression_spiral": 0.75,
+        "bearing": 0.65
+    },
+    "rebar_grades": {
+        "_note": "Replace with actual rebar properties from your code",
+        "Grade_60": {"fy_mpa": 420, "fy_psi": 60000, "fu_mpa": 620},
+        "Grade_75": {"fy_mpa": 520, "fy_psi": 75000, "fu_mpa": 690}
+    }
+}
